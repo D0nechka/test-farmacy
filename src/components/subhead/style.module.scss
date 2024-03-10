@@ -11,3 +11,25 @@
     line-height: 49.04px;
     font-weight: 700;
 }
+
+@media screen and (max-width: 1024px) {
+
+    .subVector {
+        display: none;
+    }
+
+    .subHeader {
+        color: rgba(1, 69, 122, 1); /* Цвет текста */
+        text-align: center; /* Выравнивание текста по центру */
+    }
+
+    .subTxt {
+        position: static;
+        display: block; 
+        font-size: 32px; 
+        line-height: 40px;
+        font-weight: 700;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+}

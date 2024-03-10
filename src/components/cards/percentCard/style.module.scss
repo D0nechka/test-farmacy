@@ -37,3 +37,45 @@
     letter-spacing: 0em;
     text-align: center;
 }
+
+@media screen and (max-width: 1024px) {
+    .card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 300px; 
+        height: 380px; 
+        border-radius: 20px;
+        background: rgba(253, 217, 102, 0.25);
+    }
+    
+    .icon {
+        margin-top: 20px; 
+    }
+    
+    .percentage {
+        margin-top: 10px;
+        font-size: 72px; 
+        font-weight: 700;
+        line-height: 100px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    
+    .cardText {
+        font-size: 18px; 
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    
+    .source {
+        margin-top: 10px;
+        font-size: 14px; 
+        font-weight: 300;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+}

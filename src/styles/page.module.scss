@@ -101,13 +101,46 @@
 }
 
 .horizontalBlock {
-display: flex;
-margin-top: 22px;
-gap: 30px;
-margin-left: 45px;
+    display: flex;
+    margin-top: 22px;
+    gap: 30px;
+    margin-left: 45px;
 }
 
 .sup {
     position: relative;
     font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .main {
+        width: 1024px;
+    }
+    .wrapper {
+        width: 100%;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .content, .table, .verticalBlock, .arrowsBlock, .horizontalBlock {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .factBlock, .secondChapter {
+        margin-left: 45px;
+        margin-top: -20px;
+        width: 90%;
+    }
+
+    .angleBold, .subtitle {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .verticalBlock, .horizontalBlock {
+        margin-left: 15px;
+        gap: 20px;
+    }
 }

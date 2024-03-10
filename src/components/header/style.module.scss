@@ -17,3 +17,17 @@
     margin-left: 610px;
     z-index: 1;
 }
+
+@media screen and (max-width: 1024px) {
+    .firstVector {
+        display: none
+    }
+    
+    .secondVector {
+        display: none
+    }
+    
+    .thirdVector {
+        display: none
+    }
+}

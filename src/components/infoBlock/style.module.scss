@@ -62,3 +62,42 @@
     border: none;
     background: none;
 }
+
+@media screen and (max-width: 1024px) {
+    .infoBlock {
+        width: 90%;
+        max-width: 90%; 
+        height: auto;
+        padding: 20px; 
+    }
+
+    .angledBlock {
+        width: auto; 
+    }
+
+    .angleTxt {
+        width: auto; 
+        height: auto; 
+        font-size: 18px;
+        line-height: 24px; 
+    }
+
+    .mainContent {
+        width: auto; 
+        max-width: 100%;
+        height: auto; 
+        font-size: 18px; 
+        line-height: 24px;
+        max-height: none; 
+        overflow: visible; 
+    }
+
+    .mainContent:before {
+        display: none; 
+    }
+
+    .buttonIcon {
+        right: -15px;
+        top: -15px;
+    }
+}

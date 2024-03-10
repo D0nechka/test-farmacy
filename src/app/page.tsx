@@ -16,16 +16,15 @@ import { InfoBlock } from '@/components/infoBlock/InfoBlock';
 import { HorizontalCard,VerticalCard } from '@/components/cards/index';
 import { ModalEpidemology, ModalSurvivalRates } from '@/components/modals/index';
 import { useState } from 'react';
+import { Modal } from '@/shared/modal/Modal';
 import cls from '@/styles/page.module.scss';
 
 export default function Home() {
-  const [ modalActiveEpi, setModalActiveEpi ] = useState(false);
-  const [ modalActiveSurv, setModalActiveSurv ] = useState(false);
+  const [ active, setActive ] = useState(false);
+  const [ activeSurv, setActiveSurv ] = useState(false);
 
   return (
     <main className={cls.main}>
-      <ModalEpidemology active={modalActiveEpi} setActive={setModalActiveEpi}/>
-      <ModalSurvivalRates active={modalActiveSurv} setActive={setModalActiveSurv}/>
       <Header/>
       <div className={cls.wrapper}>
         <div className={cls.firstChapter}>
@@ -34,7 +33,7 @@ export default function Home() {
           </SubHead>
           <div className={cls.content}>
             <InfoBlock
-              onClick={() => {setModalActiveEpi(true);}}
+              onClick={() => {setActive(true);}}
               buttonIcon={<FirstButtonIcon/>}
               id='1'
               icon = {<FirstIcon/>}
@@ -46,7 +45,7 @@ export default function Home() {
               content = 'В десятилетнем исследовании «Генетическая эпидемиология ХОБЛ» (COPDGene) среди пациентов с ХОБЛ, диагностированной до 55 лет, было выявлено преобладание...'
             />
             <InfoBlock
-              onClick={() => {setModalActiveSurv(true);}}
+              onClick={() => {setActiveSurv(true);}}
               buttonIcon={<SecondButtonIcon/>}
               id={cls.second}
               icon = {<SecondIcon/>}
@@ -75,22 +74,22 @@ export default function Home() {
               <div className={cls.verticalBlock}>
                 <VerticalCard
                   icon={<SprayIcon/>}
-                  title={'Ингаляционный'}
-                  boldTitle={'антихолинергик'}
+                  title='Ингаляционный'
+                  boldTitle='антихолинергик'
                   description={<span>Ингибирует бронхоконстрикторные эффекты ацетилхолина, вступая с ним в конкурентный антагонизм за взаимодействие с эффекторными мускариновыми рецепторами, дополняет и потенцирует эффект β2-агонистов<sup>1</sup></span>}
 
                 />
                 <VerticalCard
                   icon={<SecSprayIcon/>}
-                  title={'Ингаляционный'}
-                  boldTitle={'β2-агонист'}
-                  description={'Вызывает бронходилатацию посредством релаксации гладкомышечных клеток бронхов независимо от характера констриктивных стимулов, т. е. выступают в качестве функциональных антагонистов бронхоконстрикции'}
+                  title='Ингаляционный'
+                  boldTitle='β2-агонист'
+                  description='Вызывает бронходилатацию посредством релаксации гладкомышечных клеток бронхов независимо от характера констриктивных стимулов, т. е. выступают в качестве функциональных антагонистов бронхоконстрикции'
                 />
                 <VerticalCard
                   icon={<ThrdSprayIcon/>}
-                  title={'Ингаляционный'}
-                  boldTitle={'глюкокортикостероид (ИГКС)'}
-                  description={'Снижает частоту обострений, особенно в сочетании с ДДБА, подавляют хроническое воспаление при астме и снижают гиперреактивность дыхательных путей'}
+                  title='Ингаляционный'
+                  boldTitle='глюкокортикостероид (ИГКС)'
+                  description='Снижает частоту обострений, особенно в сочетании с ДДБА, подавляют хроническое воспаление при астме и снижают гиперреактивность дыхательных путей'
                 />
               </div>
               <div className={cls.arrowsBlock}>
@@ -125,6 +124,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Modal active={active} setActive={setActive}><ModalEpidemology/></Modal>
+      <Modal active={activeSurv} setActive={setActiveSurv}><ModalSurvivalRates/></Modal>
     </main>
   );
 }
