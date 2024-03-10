@@ -1,0 +1,39 @@
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:367px;
+    height: 468px;
+    border-radius: 20px;
+    background: rgba(253, 217, 102, 0.25);
+}
+
+.icon {
+    margin-top: 30px;
+}
+
+.percentage {
+    margin-top: 10px;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 131px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.cardText {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.source {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+}

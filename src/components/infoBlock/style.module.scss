@@ -1,0 +1,64 @@
+.infoBlock {
+    display: flex;
+    width: 1290px;
+    max-width: 1290px;
+    height: 195px;
+    border-radius: 20px;
+    border: 1px solid rgba(1, 69, 122, 1);
+    box-shadow: 0px 0px 25px 0px rgba(142, 160, 173, 0.35);
+    padding: 40px 29px 40px 38px;
+    box-sizing: border-box;
+    gap:29px;
+    position: relative;
+}
+
+.angledBlock {
+    position: relative;
+    color: rgba(1, 69, 122, 1);
+}
+
+.angleTxt {
+    position: absolute;
+    margin-top: 7px;
+    width: 250px;
+    height: 100px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.mainContent {
+    width: 747px;
+    height: 100px;
+    color: rgba(1, 69, 122, 1);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    max-height:110px;
+    overflow:hidden;
+}
+
+.mainContent:before{
+    content:"";
+    margin-top: -23px;
+    display:block;
+    height:25px;
+    position:relative;
+    top:96px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+
+}
+
+.buttonIcon {
+    position: absolute;
+    right: -25px;
+    top:-25px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}

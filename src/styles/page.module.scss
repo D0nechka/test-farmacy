@@ -1,0 +1,113 @@
+.main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(180deg, #FFFFFF 35.7%, #D8EFFF 100%)
+}
+
+.wrapper {
+    height: 2252px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 141px;
+    width: 1380px;
+    background:white;
+    box-shadow: 0px 0px 25px 0px rgba(142, 160, 173, 0.35);
+    gap: 100px;
+    margin-bottom: 117px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 1380px;
+    align-items: center;
+    gap: 39px;
+    margin-top: 45px;
+}
+
+.angleBold {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.titleBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 36px;
+}
+
+.factBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1290px;
+    height: 83px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #FDD966 0%, #BCD77E 68.54%);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+#second {
+    height: 213px;
+}
+
+.secondChapter {
+    margin-top: 10px;
+    width: 1380px;
+    height: 1444px;
+}
+
+.subtitle {
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.table {
+    width: 1380px;
+    height: 1090px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 49px;
+}
+
+.verticalBlock {
+    width: 1380px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-left: 45px;
+}
+
+.arrowsBlock {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-top: 4px;
+}
+
+.horizontalBlock {
+display: flex;
+margin-top: 22px;
+gap: 30px;
+margin-left: 45px;
+}
+
+.sup {
+    position: relative;
+    font-size: 20px;
+}

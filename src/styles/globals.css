@@ -1,0 +1,19 @@
+* {
+  text-decoration: none;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding: 0;
+  color: rgba(1, 69, 122, 1);
+}
+
+body::-webkit-scrollbar {
+  width: 0; 
+  background: transparent; 
+}
+ sup {
+  position: absolute;
+    font-size: 14px;
+    margin-top: -5px;
+ }
