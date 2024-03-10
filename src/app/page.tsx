@@ -2,12 +2,19 @@
 'use client';
 import { Header } from '@/components/header/Header';
 import { SubHead } from '@/components/subhead/SubHead';
-import { ArrowIcon, FirstButtonIcon, FirstIcon, SecSprayIcon, SecondButtonIcon, SecondIcon, SprayIcon, ThrdSprayIcon } from '../components/icons/index';
+import {
+  ArrowIcon,
+  FirstButtonIcon,
+  FirstIcon,
+  SecSprayIcon,
+  SecondButtonIcon,
+  SecondIcon,
+  SprayIcon,
+  ThrdSprayIcon
+} from '../components/icons/index';
 import { InfoBlock } from '@/components/infoBlock/InfoBlock';
-import { VerticalCard } from '@/components/cards/verticalCard/VerticalCard';
-import { HorizontalCard } from '@/components/cards/horizontalCard/HorizontalCard';
-import { ModalEpidemology } from '@/components/modals/ModalEpidemiology/ModalEpidemiology';
-import { ModalSurvivalRates } from '@/components/modals/ModalSurvivalRates/ModalSurvivalRates';
+import { HorizontalCard,VerticalCard } from '@/components/cards/index';
+import { ModalEpidemology, ModalSurvivalRates } from '@/components/modals/index';
 import { useState } from 'react';
 import cls from '@/styles/page.module.scss';
 
